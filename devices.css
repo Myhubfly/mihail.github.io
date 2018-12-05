@@ -1,0 +1,260 @@
+#one{float:left;width:auto;}
+#two {float:left;width:auto;padding-left:5%;}
+
+.devicecat h1, .devicecat2 h2 {
+font-color:black;text-align:center;border: 1px solid #FFE4C4;padding:1%;
+
+width:auto;
+font-size:21px;
+}
+.devicecat h2, .rootdescr {
+border-left:7px solid #646473;
+padding-left:5px;
+color:#646473;
+text-align:left;
+}
+.deviceinfo {font-size: 14px;}
+.rootdescr {border-left:7px solid #C8C8C8; font-size:13px;}
+.rootdescr ul{ list-style: none; padding:0;  margin:0;  }
+.rootdescr li{ list-style: none;   }
+.rootdescr a {color: #1A0DAB;text-decoration:none;font-weight: normal;} .rootdescr a:hover {text-decoration:underline;}
+.devroot {
+border-top: 2px solid orange;
+border-bottom: 2px solid orange;
+}
+.devroot p {
+word-wrap:break-word;
+}
+
+.specs ol {
+
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+}
+.specs li {
+width:350px;
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 12px;
+    background: #F8F8F8;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+    text-align:left;
+
+    word-wrap:break-word;
+}
+
+.specs li a {
+color:#FFF;
+}
+
+.specs li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #F0F0F0;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    color: #000000;
+}
+
+
+
+.specs li:nth-child(2n+1){background: #660099;color:#FFFFFF;border-right:5px solid #33FF00;}
+.specs li:hover:nth-child(2n+1){background: #660099;color:#FFFFFF;border-right:5px solid #33FF00;}
+
+.specs li:nth-child(2n) a {color:#000;text-decoration:none;}
+.specs li:nth-child(2n) a:hover {color:#FFF;text-decoration:none;}
+
+.specs li:hover{
+    background: #9933CC;
+    color: #FFF;
+}
+
+.specs li:hover:before {
+    transform: rotate(360deg);  
+    border:1px solid #33CCCC;
+    color:#FFF;
+}
+
+#liniya { 
+        width:auto; 
+        height:auto; 
+        float:left; 
+        margin-left:20px; 
+        text-align:center;
+padding:0.2%;
+        }
+.maincat {width:100%; height:1px; clear:both;}
+
+.deviceinfo{
+padding: 0.5%;
+}
+
+.triangle-border {
+    position: relative;
+    padding: 15px;
+    margin: 1em 0px 3em;
+    border: 3px solid #E8E8E8;
+    color: #333;
+    background: none repeat scroll 0% 0% #FFF;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.triangle-border p {
+    margin: 1em 0px;
+}
+
+.triangle-border:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 47px;
+    border-width: 13px 13px 0px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    display: block;
+    width: 0px;
+}
+
+.triangle-border:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    border-width: 20px 20px 0px;
+    border-style: solid;
+    border-color: #E8E8E8 transparent;
+    display: block;
+    width: 0px;
+}
+
+.catalogbutton {background:#3333CC;border-right: 10px solid #00FF66;padding:1%;color:#FFF;text-decoration:none;}
+.catalogbutton:hover {border-right: 10px solid #CC9966; color:#FFF;}
+
+.catalogreviewtext {
+background:#FFF;padding:1%;color:#FFF;text-decoration:none; margin:2%; 
+}
+.catalogreviewtext textarea, .catalogreviewtext input[type=submit]{
+width:70%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border:3px solid #660099;
+}
+.catalogreviewtext input[type=submit] {border: none;width:auto;padding:1%;cursor:pointer;
+  border: 3px double #FC6;
+  border-top-color: #FC9;
+  border-left-color: #FC9;
+}
+
+.devfromcat {
+    float: left;
+    border: 1px solid #E8E8E8;
+    width: 230px;
+    padding: 1%;
+    margin: 0 4%;
+    text-align: center;
+	height: 240px;
+}
+.devfromcat:hover, .devcatlist:hover {box-shadow: 0px 0px 5px 5px #33CCFF inset;transition: all 0.8s ease 0s;
+border-radius:7px;
+}
+.devfromcat h2 {
+font-size:14px;
+color: #0033CC;
+}
+.devicecat h1 {font-family: Georgia, 'Times New Roman', Times, serif;}
+.devfromcat a {text-decoration:none;} .devfromcat a:hover, .devcatlist a:hover {text-decoration:underline;}
+.devcatlist a {text-decoration:none; color: #494949;}
+.devcatlist {
+float: left; border:1px solid #E8E8E8;width:220px;height:auto;
+padding:1%;
+margin: 1px 20px;
+text-align:center;
+font-size:15px;
+}
+
+.catdescrimg img {
+float: left;
+width: 250px;
+height: 53px;
+margin: 0 5px;
+}
+
+.gameslist ul{width:760px; margin-bottom:20px; overflow:hidden; border-top:1px solid #ccc;}
+.gameslist li{line-height:1.5em; border-bottom:1px solid #ccc; float:left;display:inline; width:20%;}
+
+.gameslist li img {border-radius:5px;border:5px solid #FFF;}
+.gameslist li img:hover {border:5px solid #C8C8C8;}
+.moregames {margin:2%;width:100%; text-align:center;font-size:16px;padding:1%;}
+
+.appslist ul{width:760px; margin-bottom:20px; overflow:hidden; border-top:1px solid #ccc;}
+.appslist li{line-height:1.5em; border-bottom:1px solid #ccc; float:left;display:inline; width:10%;}
+.appslist li img {border-radius:5px;border:5px solid #FFF;}
+.appslist li img:hover {border:5px solid #C8C8C8;}
+
+
+.moregames a{background:green;color:#FFF;font-size:16px;font-family: Geneva,Arial,Helvetica,sans-serif;height:75px;padding:1%;text-decoration:none;}
+.moregames a:hover {background:#B8B8B8;}
+
+div.dd { 
+   /*position: relative; /* IE is dumb */
+    display: block;                 
+    float: left;     
+    width: 500px; 
+    height: 16px; 
+    margin: 0 0 2px; 
+    background: #fff; 
+    border:2px solid #9400D3;
+}
+
+div.dd div.green { 
+    background: #00CC33; 
+    height: 16px; 
+    width: 75%; 
+    text-align:right; 
+    display:block;
+    float: left;
+}
+
+.gamefaq li {list-style-type: none; border:1px solid #D8D8D8;padding:5px; width:350px;height:auto;}
+.driversfaq li {list-style-type: none; border:1px solid #D8D8D8;padding:5px; width:500px;height:auto;}
+.gamefaq li a {text-decoration: none;color:#7B68EE;}.gamefaq li a:hover {text-decoration: underline;}
+.gamefaq ul {margin-left: 0; padding-left: 0;}
+
+#gamehead h1 {border-left:12px double #4682B4;padding-left:5px;}
+#gamedevdescr {border:1px solid grey;border-radius:3px;padding:10px;margin-left:15px;font-size:15px;overflow:hidden;}
+
+.devapp {
+font-size:16px;
+border:1px solid #F0F0F0;
+padding:2px;
+text-align:center;
+text-transform: uppercase;
+}
+
+.devapp a {text-decoration: none; border-bottom: 2px dashed #FFCC33;}
+
+.catdropdownmenu ul, .catdropdownmenu li {
